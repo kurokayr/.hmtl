@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="favicon.ico">
+    <style type="text/css">
+       body {
+          background-image: url("papeldeparede2.jpg");
+          background-size: cover;
+          background-position: center;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          color: #fff;
+       }
+       .background-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 0;
+            margin: 0 auto; 
+            width: 70%;
+            height: 100%;
+            background-image: url("papeldeparede.jpg");
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            opacity: 0.95;
+            padding-left: auto;
+            padding-right: auto;
+            padding-bottom: 30px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #5a5a5a;
+            width: 90%;
+            max-width: 950px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .box a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .box h1 {
+            color: #fff;
+            line-height: 50px;
+            margin: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .box .left-links {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .box2 {
+            animation: animacao1 5s;
+            text-align: center;
+            background-image: url("banner.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 90%;
+            max-width: 950px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 0 20px;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .anima:hover{
+            transform: scale(1.1,1.1);
+        }
+
+
+        @keyframes animacao1{
+            from {
+                    margin-top: -10%;
+                    opacity: 0;
+                 }
+                 to{
+                    margin-top: 2%;
+                    opacity: 1;
+                    }
+        }
+
+        .box3, .box4, .box5 {
+            text-align: center;
+            width: 90%;
+            max-width: 450px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 0 20px;
+            position: relative;
+            background-color: #b09b8f;
+            border-radius: 10px;
+        }
+
+        .box3 .image-container, .box4 .image-container, .box5 .image-container {
+            float: left;
+            width: 170px;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+
+        .box3 .image, .box4 .image, .box5 .image {
+            width: 100%;
+        }
+
+        .box3 .content, .box4 .content, .box5 .content {
+            overflow: hidden;
+        }
+
+        .box3 h2 a, .box4 h2 a, .box5 h2 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .box3 ul, .box4 ul, .box5 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .box3 ul li, .box4 ul li, .box5 ul li {
+            margin-bottom: 5px;
+        }
+        
+        #sobre {
+            background-color: #b09b8f;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #sobre p {
+            margin-bottom: 10px;
+        }
+         /* Media Query para telas médias (tablets) */
+         @media (max-width: 1024px) {
+        body {
+        font-size: 1.1em; 
+        }
+        .box .left-links{
+                font-size: 0.8em;
+            }
+        
+        }
+
+        @media (max-width:890px){
+            .box h1{
+                font-size: 2.0em;
+                left: 80%;
+                right: 10%;
+            }
+            
+        }
+        @media (min-width: 481px) and (max-width: 767px){
+            body{
+                font-size: 1em;
+                
+                background-image: none;
+            }
+            .background-box{
+                width: 100%;
+
+            }
+            
+        }
+
+        @media (max-width: 690px){
+           
+            .box .left-links{
+                font-size: 0.9em;
+            }
+        }
+
+        /* Media Query para telas pequenas (telefones) */
+        @media (min-width: 320px) and (max-width: 480px){
+        body {
+        overflow-x: hidden;    
+        font-size: 0.8em; 
+        background-image: none;
+        
+         }  
+         .background-box{
+                width: 100%;
+
+            }
+            .box h1{
+                padding: 50px;
+            }
+         }
+         @media print{
+		body{
+            background-color: #fff;
+            color: #000;
+		}
+		.box {
+			display: none;
+		}}
+    </style>
+</head>
+<body>
+    <div class="background-box">
+    <div class="box">
+        <div class="left-links">
+            <a href="Home.html">Home</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+        <h1>Teoria Musical</h1>
+    </div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="image-container">
+            <img src="violino.jpg" alt="Imagem Módulo 1" class="image">
+        </div>
+        <div class="content">
+            <h2 class="anima"><a href="modulo1.html" accesskey="1">Módulo 1</a></h2>
+            <ul>
+                <li>Elementos da Música</li>
+                <li>Notas Musicais</li>
+                <li>Tom e Semitons</li>
+                <li>Sustenidos e Bemóis</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box4">
+        <div class="image-container">
+            <img src="piano.jpg" alt="Imagem Módulo 2" class="image">
+        </div>
+        <div class="content">
+            <h2 class="anima"><a href="modulo2.html" accesskey="2">Módulo 2</a></h2>
+            <ul>
+                <li>Oitavas</li>
+                <li>Escalas</li>
+                <li>Claves</li>
+                <li>Duração das notas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box5">
+        <div class="image-container">
+            <img src="bateria.jpg" alt="Imagem Módulo 3" class="image">
+        </div>
+        <div class="content">
+            <h2 class="anima"><a href="modulo3.html">Módulo 3</a></h2>
+            <ul>
+                <li>Elementos do Ritmo</li>
+                <li>Métrica do Compasso</li>
+                <li>Ritmos e padrões rítmicos</li>
+                <li>instrumentos de percussão</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div id="sobre">
+        <h2>Sobre</h2>
+        <p>Este site foi criado para fornecer aulas e materiais de teoria musical de forma simples e acessível. Nosso objetivo é ajudar músicos de todos os níveis a aprimorar seus conhecimentos teóricos, proporcionando uma base sólida para sua prática musical.</p>
+        <p>Com nossos módulos de ensino abrangentes, você aprenderá sobre os elementos fundamentais da música, desde notas musicais até conceitos avançados de harmonia e composição. Esperamos que este site seja uma ferramenta útil e inspiradora em sua jornada musical.</p>
+        <p>Divirta-se estudando e explorando o mundo da teoria musical!</p>
+    </div>
+    
+</body>
+</html>
+
+

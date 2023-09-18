@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Módulo 2</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            background-image: url("papeldeparede2.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        
+        .background-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+            width: 70%;
+            height: 100%;
+            background-image: url("papeldeparede.jpg");
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            opacity: 0.95;
+            padding-left: auto;
+            padding-right: auto;
+            padding-top: 0; 
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #5a5a5a;
+            width: 90%;
+            max-width: 950px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .box a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .box h1 {
+            color: #fff;
+            line-height: 50px;
+            margin: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .box .left-links {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+        
+        a {
+            color: #312013; 
+            text-decoration: none;
+        }
+        p{
+            text-align: justify;
+        }
+
+         /* Media Query para telas médias (tablets) */
+         @media (max-width: 1024px) {
+        body {
+        font-size: 1.1em; 
+        }
+        .box .left-links{
+                font-size: 0.8em;
+            }
+        
+        }
+
+        @media (max-width:890px){
+            .box h1{
+                font-size: 2.0em;
+                left: 80%;
+            }
+            
+        }
+        @media (min-width: 481px) and (max-width: 767px){
+            body{
+                font-size: 1em;
+                background-image: none;
+            }
+            .background-box{
+                width: 100%;
+
+            }
+            
+        }
+
+        @media (max-width: 690px){
+           
+            .box .left-links{
+                font-size: 0.9em;
+            }
+        }
+
+        /* Media Query para telas pequenas (telefones) */
+        @media (min-width: 320px) and (max-width: 480px){
+        body {
+        overflow-x: hidden;    
+        font-size: 0.8em; 
+        background-image: none;
+         }  
+         .background-box{
+                width: 100%;
+
+            }
+         }
+         @media print{
+		body{
+            background-color: #fff;
+            color: #000;
+		}
+		.box {
+			display: none;
+		}
+        .lista{
+            display: none;
+        }
+    }
+        .lista{
+            text-align: justify;
+        }
+        
+        
+    
+    </style>
+</head>
+<body>
+    <div class="background-box">
+        <div class="box">
+            <div class="left-links">
+                <a href="Home.html" accesskey="h">Home</a>
+                <a href="modulo1.html" accesskey="1">Módulo 1</a>
+                <a href="modulo3.html" accesskey="3">Módulo 3</a>
+            </div>
+            <h1>Módulo 2</h1>
+        </div>
+        <ul class="lista">
+            <li><a href="#oitavas">Oitavas</a></li>
+            <li ><a href="#escalas">Escalas</a></li>
+            <li><a href="#claves">Claves</a></li>
+            <li><a href="#duracao-das-notas">Duração das Notas</a></li>
+        </ul>
+        <h2><a id="oitavas">Oitavas</a></h2>
+        
+        <p><ul>
+            <li>As oitavas são uma forma de descrever a altura dos sons na música.</li>
+            <li>A música é composta por diferentes frequências sonoras, e as oitavas ajudam a organizar essas frequências em grupos. </li>
+            <li>Uma oitava é um intervalo entre dois sons em que a frequência do segundo som é o dobro da frequência do primeiro som. </li>
+            <li>Isso significa que, quando você vai de uma oitava para a próxima, o som fica mais agudo. </li>
+            <li>Por exemplo, se você tocar a nota "Dó" em uma oitava e, em seguida, tocar a nota "Dó" na oitava seguinte, a segunda nota será mais aguda.</li>
+        </ul></p>
+        <h2><a id="escalas">Escalas</a></h2>
+        <p><ul><li>As escalas são sequências organizadas de notas musicais que são usadas para criar melodias e harmonias. </li>
+            <li>Elas seguem um padrão específico de intervalos entre as notas.</li>
+                <li> A escala mais comum é a escala diatônica, composta por sete notas (Dó, Ré, Mi, Fá, Sol, Lá, Si) e seus respectivos sustenidos e bemóis. </li>
+                    <li>As escalas podem ter diferentes tonalidades, como maior, menor, pentatônica, entre outras, e cada uma possui um som característico. </li>
+                        <li> Elas são usadas como base para a criação de acordes e para determinar as notas que serão usadas em uma determinada música.</li></ul></p>
+        
+        <h2><a id="claves">Claves</a></h2>
+        <p><ul><li>As claves são símbolos usados na notação musical para indicar a altura das notas na pauta musical. </li>
+        <li>Elas são colocadas no início de uma linha de pauta para indicar a posição das notas. </li>
+        <li> As claves mais comuns são a clave de sol, a clave de fá e a clave de dó.</li>
+        <li> A clave de sol é usada principalmente para notar as notas mais agudas, enquanto a clave de fá é usada para notar as notas mais graves.</li>
+        <li> A clave de dó é menos comum, mas também é utilizada para notas intermediárias. As claves ajudam os músicos a identificar e ler as notas com mais facilidade.</li></ul>></p>
+              <figure>
+
+                <img src="Claves.jpg" width="50%"/>
+                
+              </figure>
+        <h2><a id="duracao-das-notas">Duração das notas</a></h2>
+        <p>
+        <ul><li>Na notação musical, a duração das notas é indicada por símbolos gráficos chamados de figuras de nota. Esses símbolos representam a quantidade de tempo que uma nota deve ser tocada em relação a uma unidade de tempo padrão, que é determinada pela figura de nota mais básica, chamada de semibreve.</li></ul>
+            </p>
+            <p>
+            Aqui estão os símbolos mais comuns para representar as durações das notas:
+            <ul>
+              <li>Semibreve: É a figura de nota mais longa e geralmente recebe quatro tempos. Ela é representada por um oval vazio.</li>
+              <li>Mínima: Tem metade da duração da semibreve e normalmente recebe dois tempos. É representada por um oval preenchido sem haste.</li>
+              <li>Semínima: Tem metade da duração da mínima e geralmente recebe um tempo. É representada por um oval preenchido com uma haste voltada para cima ou para baixo.</li>
+              <li>Colcheia: Tem metade da duração da semínima e recebe metade de um tempo. É representada por um oval preenchido com uma haste e uma "bandeirinha" na ponta.</li>
+              <li>Semicolcheia: Tem metade da duração da colcheia e recebe um quarto de tempo. É representada por um oval preenchido com uma haste e duas "bandeirinhas" na ponta.</li>
+              <li>Fusas: São notas ainda mais curtas, recebendo um oitavo de tempo cada. Elas são representadas por um oval preenchido com uma haste e três ou mais "bandeirinhas" na ponta.</li>
+            </ul>
+            </p>
+            <p>
+            <ul><li>Esses símbolos podem ser combinados com pontos ao lado para aumentar a duração das notas em metade do seu valor original. Por exemplo, uma mínima com um ponto ao lado se torna uma mínima e meia, equivalente a três tempos.</li>
+            </p>
+            <p>
+            <li>Além das figuras de nota, existem também os silêncios, que representam pausas na música. Eles têm durações equivalentes às notas correspondentes. Por exemplo, um silêncio de semibreve tem a mesma duração de uma semibreve.</li>
+            </p>
+            <p>
+            <li>A duração das notas é essencial para estabelecer o ritmo e a fluidez de uma composição musical. Ao ler uma partitura, os músicos observam a forma como as figuras de nota estão organizadas em relação às linhas de compasso para determinar a duração e a subdivisão do tempo.</li>
+            </ul></p>
+            <figure>
+
+                <img src="duracao.png" width="50%"/>
+                
+              </figure>
+        
+       
+    </div>
+</body>
+</html>

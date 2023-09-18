@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    .submit:hover{
+      background-color: #000CC4;
+      color:#E6E6E6;
+    }
+    body {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #333;
+      display: block;
+      padding: 1rem;
+      max-width: 370px;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-title {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+    }
+
+    .input-container {
+      position: relative;
+    }
+
+    .input-container input,
+    .form button {
+      outline: none;
+      border: 1px solid #555;
+      margin: 8px 0;
+    }
+
+    .input-container input {
+      background-color: #444;
+      padding: 1rem;
+      padding-right: 3rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      width: 300px;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      color: #fff;
+    }
+
+    .submit {
+      display: block;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      background-color: #4F46E5;
+      color: #fff;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      width: 100%;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      border: none;
+    }
+
+    .signup-link {
+      color: #888;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      text-align: center;
+    }
+
+    .signup-link a {
+      text-decoration: underline;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <form class="form" action="Login.html">
+    <p class="form-title">Crie sua conta</p>
+    <div class="input-container">
+      <input type="text" placeholder="Nome completo" required tabindex="1">
+    </div>
+    <div class="input-container">
+      <input type="email" placeholder="Endereço de e-mail" required tabindex="2">
+    </div>
+    <div class="input-container">
+      <input type="password" placeholder="Senha" required tabindex="3">
+    </div>
+    <div class="input-container">
+      <input type="password" placeholder="Confirme a senha" required tabindex="4">
+    </div>
+    <button type="submit" class="submit">Criar conta</button>
+    <p class="signup-link">Já possui uma conta? <a href="Login.html">Faça login</a></p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Módulo 1</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            background-image: url("papeldeparede2.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        
+        .background-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+            width: 70%;
+            height: 100%;
+            background-image: url("papeldeparede.jpg");
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            opacity: 0.95;
+            padding-left: auto;
+            padding-right: auto;
+            padding-top: 0; 
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #5a5a5a;
+            width: 90%;
+            max-width: 950px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .box a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .box h1 {
+            color: #fff;
+            line-height: 50px;
+            margin: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .box .left-links {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+        
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #312013;
+            color: white;
+        }
+        
+        a {
+            color: #312013; 
+            text-decoration: none;
+        }
+        p{
+            text-align: justify;
+        }
+        
+         /* Media Query para telas médias (tablets) */
+         @media (max-width: 1024px) {
+        body {
+        font-size: 1.1em; 
+        }
+        .box .left-links{
+                font-size: 0.8em;
+            }
+        
+        }
+
+        @media (max-width:890px){
+            .box h1{
+                font-size: 2.0em;
+                left: 80%;
+            }
+            
+        }
+        @media (min-width: 481px) and (max-width: 767px){
+            body{
+                font-size: 1em;
+                background-image: none;
+            }
+            .background-box{
+                width: 100%;
+
+            }
+            
+        }
+
+        @media (max-width: 690px){
+           
+            .box .left-links{
+                font-size: 0.9em;
+            }
+        }
+
+        /* Media Query para telas pequenas (telefones) */
+        @media (min-width: 320px) and (max-width: 480px){
+        body {
+        overflow-x: hidden;    
+        font-size: 0.8em; 
+        background-image: none;
+         }  
+         .background-box{
+                width: 100%;
+
+            }
+         }
+         @media print{
+		body{
+            background-color: #fff;
+            color: #000;
+		}
+		.box {
+			display: none;
+		}
+        .lista{
+            display: none;
+        }
+        }
+        .lista{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-box">
+        <div class="box">
+            <div class="left-links">
+                <a href="Home.html" accesskey="h">Home</a>
+                <a href="modulo2.html" accesskey="2">Módulo 2</a>
+                <a href="modulo3.html" accesskey="3">Módulo 3</a>
+            </div>
+            <h1>Módulo 1</h1>
+        </div>
+        <ul class="lista">
+            <li><a href="#elementos">Elementos da Música</a></li>
+            <li ><a href="#notas">Notas Musicais</a></li>
+            <li><a href="#tom-semitons">Tom e Semitons</a></li>
+            <li><a href="#sustenidos-bemois">Sustenidos e Bemóis</a></li>
+        </ul>
+        <h2><a id="elementos">Elementos da Música</a></h2>
+        <p><ul> <li>Os elementos da música são componentes fundamentais que compõem uma peça musical. </li>
+        <li>Eles incluem melodia, harmonia, ritmo, timbre e dinâmica. </li>
+        <li>A melodia é uma sequência de notas que forma a linha principal da música. </li>
+        <li>A harmonia refere-se à combinação de notas que soam simultaneamente e proporcionam uma base sonora para a melodia. </li>
+        <li>O ritmo é a organização do tempo na música, incluindo a duração e acentuação das notas. </li>
+        <li>O timbre é a qualidade sonora única de um instrumento ou voz, permitindo diferenciar um som de outro. </li>
+        <li>A dinâmica refere-se à variação de intensidade sonora ao longo da música, como tocar mais alto ou mais suave.</li></ul></p>
+        
+        <h2><a id="notas">Notas Musicais</a></h2>
+        <p><ul><li>As notas musicais são os sons fundamentais da música. Elas são representadas por letras do alfabeto de A a G. </li>
+        <li>No sistema ocidental, utilizamos sete notas principais: A, B, C, D, E, F e G. </li>
+        <li> Essas notas se repetem em diferentes oitavas, que são intervalos de altura. </li>
+        <li>Cada nota também pode ser acompanhada por um símbolo que indica a duração, como uma semibreve, mínima, semínima, colcheia, entre outras.</li><br><br>
+        <li>Relação da Nota Alemã com a Nota Latina:</li>
+        <li> No sistema alemão de notação musical, as letras das notas são diferentes do sistema latino. Na notação alemã, as notas são representadas pelas letras A, H, C, D, E, F e G. Aqui está a relação entre as notas alemãs e latinas:</li></ul></p>
+            </li><h2 style="color:#312013">Tabela de Notas Alemãs e Notas Latinas</h2>
+            <table>
+                <tr>
+                    <th>Notas Alemãs</th>
+                    <th>Notas Latinas</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Lá</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Dó</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Ré</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>Mi</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>Fá</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>Sol</td>
+                </tr>
+            </table>
+        <h2><a id="tom-semitons">Tom e Semitons</a></h2>
+        <p><ul><li>Tom e semitom são unidades de medida utilizadas para representar a distância entre duas notas musicais. </li>
+        <li>Um tom é uma distância de dois semitons. Por exemplo, a distância entre C e D é um tom. </li>
+        <li>Já um semitom é a menor distância entre duas notas consecutivas. </li>
+        <li>Por exemplo, a distância entre C e C# (C sustenido) ou entre C e Db (D bemol) é um semitom.</li></ul></p>
+        
+        <h2><a id="sustenidos-bemois">Sustenidos e Bemóis</a></h2>
+        <p><ul><li>Os sustenidos (#) e bemóis (b) são acidentes musicais que alteram a altura das notas em meio tom. </li>
+        <li>Um sustenido aumenta a altura de uma nota em meio tom, enquanto um bemol diminui a altura de uma nota em meio tom. </li>
+        <li>Por exemplo, se adicionarmos um sustenido à nota C, ela se torna C# (C sustenido), que é meio tom mais alto. </li>
+        <li>Se adicionarmos um bemol à nota C, ela se torna Db (D bemol), que é meio tom mais baixo.</li></ul></p>
+        
+       
+    </div>
+</body>
+</html>
+

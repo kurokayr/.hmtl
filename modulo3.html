@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Módulo 3</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            background-image: url("papeldeparede2.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        
+        .background-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+            width: 70%;
+            height: 100%;
+            background-image: url("papeldeparede.jpg");
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            opacity: 0.95;
+            padding-left: auto;
+            padding-right: auto;
+            padding-top: 0; 
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #5a5a5a;
+            width: 90%;
+            max-width: 950px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .box a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .box h1 {
+            color: #fff;
+            line-height: 50px;
+            margin: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .box .left-links {
+            position: absolute;
+            left: 2%; 
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+        
+        a {
+            color: #312013; 
+            text-decoration: none;
+        }
+        p{  
+            width: 100%;
+            text-align: justify;
+        }
+
+        body {
+        font-size: 16px; 
+        }
+
+        /* Media Query para telas médias (tablets) */
+        @media (max-width: 1024px) {
+        body {
+        font-size: 1.1em; 
+        }
+        .box .left-links{
+                font-size: 0.8em;
+            }
+        
+        }
+
+        @media (max-width:890px){
+            .box h1{
+                font-size: 2.0em;
+                left: 80%;
+            }
+            
+        }
+        @media (min-width: 481px) and (max-width: 767px){
+            body{
+                font-size: 1em;
+                background-image: none;
+            }
+            .background-box{
+                width: 100%;
+
+            }
+            
+        }
+
+        @media (max-width: 690px){
+           
+            .box .left-links{
+                font-size: 0.9em;
+            }
+        }
+
+        /* Media Query para telas pequenas (telefones) */
+        @media (min-width: 320px) and (max-width: 480px){
+        body {
+        overflow-x: hidden;    
+        font-size: 0.8em; 
+        background-image: none;
+         }  
+         .background-box{
+                width: 100%;
+
+            }
+         }
+         @media print{
+		body{
+            background-color: #fff;
+            color: #000;
+		}
+		.box {
+			display: none;
+		}
+        .lista{
+            display: none;
+        }
+    }
+        .lista{
+            text-align: justify;
+        }
+        
+        
+    
+       
+    </style>
+</head>
+<body>
+    <div class="background-box">
+        <div class="box">
+            <div class="left-links">
+                
+                <a href="Home.html" accesskey="h">Home</a>
+                <a href="modulo1.html" accesskey="1">Módulo 1</a>
+                <a href="modulo2.html" accesskey="2">Módulo 2</a>
+    
+            </div>
+            <h1>Módulo 3</h1>
+        </div>
+        <ul class="lista">
+            <li><a href="#elementos">Elementos do Ritmo</a></li>
+            <li ><a href="#metrica">Métrica e Compasso</a></li>
+            <li><a href="#ritmo">Ritmos e padrões rítmicos:</a></li>
+            <li><a href="#instrumentos">Instrumentos de percussão:</a></li>
+        </ul>
+        
+    
+        <h2><a id="elementos">Elementos do Ritmo</a></h2>
+        <p> <ul>
+            <li><b>Batida (Beat):</b> A batida é o pulso fundamental da música. Ela é regular e recorrente, servindo como a unidade básica de medida temporal. A batida geralmente é enfatizada em uma música e é onde os ouvintes geralmente batem os pés ou movem a cabeça em sincronia.</li>
+            <li><b>Subdivisões rítmicas:</b> O ritmo também é dividido em subdivisões menores, como semínimas, colcheias, semicolcheias, etc. Essas subdivisões criam padrões rítmicos mais complexos dentro de uma música.</li>
+            <li><b>Acentuações:</b> Algumas notas ou batidas podem ser acentuadas, o que significa que elas recebem mais ênfase do que outras. Essas acentuações podem criar ritmos mais interessantes e dinâmicos.</li>
+            <li><b>Padrões de pausas:</b> Pausas ou silêncios entre notas e batidas também fazem parte do ritmo, pois contribuem para a sua variação e dinâmica.</li>
+        </ul></p>
+        
+        <h2><a id="metrica">Métrica e Compasso</a></h2>
+        <p><ul>
+            <li>A métrica é a organização do tempo em grupos regulares de batidas chamados compassos. Cada compasso contém um número específico de batidas, como 4/4 (quatro batidas por compasso) ou 3/4 (três batidas por compasso).</li>
+            <li>A escolha da métrica afeta o caráter e o ritmo da música. Compassos diferentes podem criar diferentes sensações, desde uma sensação de marcha em 4/4 até uma sensação mais dançante em 6/8.</li>
+        </ul></p>
+
+        <h2><a id="ritmo">Ritmos e padrões rítmicos:</a></h2>
+        <p><ul>
+            <li>Ritmos são sequências específicas de notas, durações e pausas que compõem o tecido rítmico de uma música.</li>
+            <li>Diferentes estilos musicais têm ritmos característicos. Por exemplo, o reggae é conhecido por suas batidas de acentuação no tempo fraco e o funk é conhecido por seus padrões rítmicos complexos.</li>
+            <li>Padrões rítmicos podem ser repetidos e variados ao longo de uma música para criar interesse e dinâmica.</li>
+        </ul></p>
+
+    
+        <h2><a id="instrumentos">Instrumentos de percussão:</a></h2>
+            <p>
+            <ul>
+              <li>Instrumentos de percussão, como tambores, congas, caixas, entre outros, desempenham um papel crucial na expressão do ritmo na música.</li>
+              <li>Eles fornecem a base rítmica e muitas vezes definem o groove da música, ditando como as pessoas respondem fisicamente ao ritmo.</li>
+            </ul>
+            </p>
+     
+        
+    </div>
+</body>
+</html>
